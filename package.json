@@ -1,0 +1,29 @@
+{
+  "name": "opt-use-ab-hook",
+  "version": "0.1.0",
+  "description": "optimize useab hook",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mtheusrabelo/OPT-Use-AB-Hook.git"
+  },
+  "keywords": [
+    "optimize",
+    "useab",
+    "react",
+    "hook",
+    "ab"
+  ],
+  "author": "Matheus Freire Rabelo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mtheusrabelo/OPT-Use-AB-Hook/issues"
+  },
+  "homepage": "https://github.com/mtheusrabelo/OPT-Use-AB-Hook#readme",
+  "peerDependencies": {
+    "react": "^17.0.2"
+  }
+}
