@@ -1,20 +1,19 @@
 import { useState, useEffect, useCallback } from "react";
 
 export const useAB = (experiment) => {
-  const [variant, setVariant] = useState(null);
-  const variantName = `ab_${experiment}`;
+  const [variant, setVariant] = useState(false);
 
   const handleVariant = useCallback(() => {
-    setVariant(experiment);
+    setVariant(true);
   }, [experiment]);
 
   useEffect(() => {
-    window.addEventListener(variantName, handleVariant);
+    window.addEventListener(experiment, handleVariant);
 
     return () => {
-      window.removeEventListener(variantName, handleVariant);
+      window.removeEventListener(experiment, handleVariant);
     };
-  }, [variantName, handleVariant]);
+  }, [experiment, handleVariant]);
 
   return variant;
 };

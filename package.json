@@ -4,7 +4,7 @@
   "description": "optimize useab hook",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "exit 0"
   },
   "repository": {
     "type": "git",
@@ -15,6 +15,7 @@
     "useab",
     "react",
     "hook",
+    "test",
     "ab"
   ],
   "author": "Matheus Freire Rabelo",

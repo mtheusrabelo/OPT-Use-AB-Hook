@@ -3,15 +3,15 @@
 # Usage
 The following code goes to the variant into Google Optimize
 ```js
-var myABTest = new CustomEvent('ab_myabtest');
-window.dispatchEvent(myABTest);
+var myTest = new CustomEvent('mytest');
+window.dispatchEvent(myTest);
 ```
 
-The following code is inside your component
+The following code goes inside your component
 ```jsx
 const Component = () => {
-  const ab = useAB('myabtest');
-  return (ab ? <div>yes</div> : <div>no</div>);
+  const ab = useAB('mytest');
+  return (ab ? <div>yes</div> : <div>default</div>);
 };
 ```
 
