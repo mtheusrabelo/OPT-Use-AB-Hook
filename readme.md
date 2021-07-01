@@ -1,12 +1,6 @@
 # Google Optimize Use AB React Hook
 
 # Usage
-The following code goes to the variant into Google Optimize
-```js
-var myTest = new CustomEvent('mytest');
-window.dispatchEvent(myTest);
-```
-
 The following code goes inside your component
 ```jsx
 const Component = () => {
