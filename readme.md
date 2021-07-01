@@ -4,7 +4,7 @@
 The following code goes inside your component
 ```jsx
 const Component = () => {
-  const ab = useAB('mytest');
+  const ab = useAB('mytestid');
   return (ab ? <div>yes</div> : <div>default</div>);
 };
 ```
