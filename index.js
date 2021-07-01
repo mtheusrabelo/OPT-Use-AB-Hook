@@ -1,19 +1,7 @@
-import { useState, useEffect, useCallback } from "react";
 
-export const useAB = (experiment) => {
-  const [variant, setVariant] = useState(false);
+export const useAB = (experimentId) => {
+  const variationId = Math.random() > 0.5 ? 1 : 0;
+  window.ga('set', 'exp', `${experimentId}.${variationId}`);
 
-  const handleVariant = useCallback(() => {
-    setVariant(true);
-  }, [experiment]);
-
-  useEffect(() => {
-    window.addEventListener(experiment, handleVariant);
-
-    return () => {
-      window.removeEventListener(experiment, handleVariant);
-    };
-  }, [experiment, handleVariant]);
-
-  return variant;
+  return variationId > 0;
 };
